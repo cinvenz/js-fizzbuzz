@@ -13,24 +13,25 @@
 // Applica stili differenti agli elementi aggiunti al DOM nel *BONUS 1*, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz.
 // Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna.
 
+const eleSquares = document.querySelector('.squares');
+
 console.log('Numeri da 1 a 100');
 for (let i = 1; i <= 100; i++) { 
 	
-    if (i % 3 == 0 && i % 5 != 0){
+    if (i % 15 == 0){
+        eleSquares.innerHTML += `<div class="sq">${'fizzbuzz'}</div>`;
         console.log('fizz');
-    } else if (i % 5 == 0 && i % 3 != 0){
+    } else if (i % 3 == 0){
+        eleSquares.innerHTML += `<div class="sq">${'fizz'}</div>`;
         console.log('buzz');
-    } else if (i % 5 == 0 && i % 3 == 0) {
+    } else if (i % 5 == 0) {
+        eleSquares.innerHTML += `<div class="sq>${'buzz'}</div>`;
         console.log('fizzbuzz');
     }
     else {
         console.log(i);
+        eleSquares.innerHTML += `<div class="sq">${i}</div>`;
     }
     
-    
-
-    
-
-
 }
 
