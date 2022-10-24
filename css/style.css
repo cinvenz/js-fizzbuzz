@@ -31,6 +31,14 @@ h1 {
 	gap: 1rem;
 }
 
+.btn {
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    background-color: salmon;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
 .sq {
 	display: flex;
 	justify-content: center;
